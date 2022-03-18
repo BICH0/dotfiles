@@ -1,0 +1,68 @@
+conky.config = {
+    alignment = "middle_right",
+    background = true,
+    border_width = 10,
+    cpu_avg_samples = 2,
+    default_color = 'red',
+    default_outline_color = 'white',
+    default_shade_color = 'white',
+    double_buffer = true,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    extra_newline = false,
+    font = 'DejaVu Sans Mono:size=12',
+    gap_x = 25,
+    gap_y = 60,
+    minimum_height = 5,
+    minimum_width = 5,
+    net_avg_samples = 2,
+    no_buffers = true,
+    out_to_console = false,
+    out_to_ncurses = false,
+    out_to_stderr = false,
+    out_to_x = true,
+    own_window_class = 'conky',
+    own_window = true,
+    own_window_type = 'normal',
+    own_window_transparent = false,
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_argb_visual = true,
+    own_window_argb_value = 230,
+    show_graph_range = false,
+    show_graph_scale = false,
+    stippled_borders = 0,
+    update_interval = 1.0,
+    uppercase = false,
+    use_spacer = 'none',
+    use_xft = true,
+}
+
+conky.text = [[
+${color grey}Kernel ${alignr}${color}${kernel}
+${color grey}Uptime ${alignr}$color $uptime
+${color grey}CPU $color ${freq_g}GHz $color$cpu% ${cpubar 4}
+${color grey}RAM $color $mem/$memmax - $memperc% ${membar 4}${if_match ${swapperc} > 0}
+${color grey}Swap $color $swap/$swapmax - $swapperc% ${swapbar 4}${endif}
+${color grey}GPU $color$acpitempºC ${color grey}${if_match "${exec 'nvidia-smi -q -d utilization | grep Gpu | tr -s " " | cut -f4 -d " "'}" > "0"}     NVIDIA BRR${endif}${alignr}CPU: $color${hwmon 1 temp 1}°C${if_match ${exec 'cat /sys/class/power_supply/AC0/online'} == 0}
+${color grey}Battery ${alignr}${color}${battery_time}${endif}
+
+${color grey}[File systems] $color$hr
+${color grey}/       $color${fs_used /}/${fs_size /} ${fs_bar 6 /}
+${color grey}Home    $color${fs_used /home}/${fs_size /home} ${fs_bar 6 /home}
+${color grey}Juegos  $color${fs_used /opt/juegos}/${fs_size /opt/juegos} ${fs_bar 6 /opt/juegos}
+${color grey}VM's    $color${fs_used /opt/mvs}/${fs_size /opt/mvs} ${fs_bar 6 /opt/mvs}
+
+${color grey}[Networking] $color$hr${if_up tun0}
+${color grey}VPN${color} ${alignr}${addr tun0}${endif}
+${if_up eno1}${color grey}Ethernet${color} ${alignr}${addr eno1}${else}${if_up wlo1}${color grey}Wi-Fi ${color}${alignr}${addr wlo1}${endif}
+${alignc}${if_up eno1}${upspeedgraph eno1 40,175 0.1 red}   ${downspeedgraph eno1 40,175 0.1 red}${else}${if_up wlo1}${upspeedgraph wlo1 40,175 red}   ${downspeedgraph wlo1 40,175 0.1 red}${endif}
+${if_up eno1}${color grey}    Up:$color ${upspeed eno1} ${color grey} ${alignr}Down:$color ${downspeed eno1}    ${else}${if_up wlo1}${color grey}    Up:$color ${upspeed wlo1} ${color grey} ${alignr}Down:$color ${downspeed wlo1}    ${endif}
+$hr
+${color grey}Name                PID    CPU%   MEM%
+${if_match ${top cpu 1} > 10}${top name 1}${top pid 1} ${top cpu 1} ${top mem 1}${else}${color} ${top name 1}${top pid 1} ${top cpu 1} ${top mem 1}${endif}
+ ${top name 2}${top pid 2} ${top cpu 2} ${top mem 2}
+ ${top name 3}${top pid 3} ${top cpu 3} ${top mem 3}
+ ${top name 4}${top pid 4} ${top cpu 4} ${top mem 4}
+]]
