@@ -25,6 +25,7 @@ These are all my Dotfiles so far, i will update them as i change them.<br/>
   </li>
   <li><a href="terminals">Terminals</a>
     <ul>
+      <li><a href="colors">Palette</a></li>
       <li><a href="coolterm">Coolterm</a></li>
       <li><a href="alacritty">Alacritty</a></li>
     </ul>
@@ -45,11 +46,11 @@ and change the <i>ZSH_THEME</i> to the name of your theme (without file extensio
 To use this dircolors you have to set up in your bashrc/zshrc/kshrc a line like this one:<br/>
 <code>eval $(dircolors /location/of/dircolors/file)</code>
 <h2 id="conkyrc">Conky</h2>
-<br/>
+<img width="300px" src="https://user-images.githubusercontent.com/81905574/159129032-243233e8-8748-41c1-a3c0-bbb7e2c56e75.gif">
 This is the output of the .conkyrc file, to change the accent color modify <i>default_color</i> in .conkyrc and set it to your desired color,
 the location is set for a 1920x1080p screen, adjust it to your screen values.
 <h2 id="glava">Glava</h2>
-<br/>
+<img width="300px" src="https://user-images.githubusercontent.com/81905574/159129047-39effc96-ca6b-4554-adc1-8fba6a8a5395.gif">
 In my case the glava size and position is adjusted to fit on top of the conky window.
   <h3 id="bars">bars.glsl</h3>
     <pre><code>
@@ -77,24 +78,49 @@ In my case the glava size and position is adjusted to fit on top of the conky wi
       setforcegeometry true
      </code></pre>
 <h2 id="neofetch">Neofetch</h2>
-<img src="https://user-images.githubusercontent.com/81905574/159067790-b97564b8-b93b-4945-9442-0f8370d528d9.png">
+<img width="500px" src="https://user-images.githubusercontent.com/81905574/159067790-b97564b8-b93b-4945-9442-0f8370d528d9.png">
 All the colors are from an <a href="https://misc.flogisoft.com/_media/bash/colors_format/256_colors_bg.png">ansi color table</a> (Image from Flozz' MISC)
 
 <h2 id="ranger">Ranger</h2>
-  
   <h3 id="theme">theme.py</h3>
-    
+    To apply the theme you have to type this commands:
+    <code>mkdir ~/.config/ranger/colorschemes && mv <theme>.py ~/.config/ranger/colorschemes</code>
+    And edit the colorscheme line to your preferences
   <h3 id="rrc">rc.conf</h3>
-    
+    <pre><code>
+      preview_images true
+      colorscheme <theme without the .py>
+      collapse_preview false
+      mouse_enabled false
+    </code></pre>
   <h3 id="rifle">rifle.conf</h3>
-    
+    These lines aren't modified, you have to add them
+    <pre><code>
+       !mime ^text, label editor. has atom, ext xml|json|csv|tex|py|pl|rb|js|sh|php = atom -- "$@" & disown
+       !mime ^text, label pager. has highlight, ext xml|json|csv|tex|py|pl|rb|js|sh|php = highlight -O ansi | less -- "$@"
+    </code></pre>
   <h3 id="scope">scope.sh</h3>
-
+    <pre><code>
+      PYGMENTIZE_STYLE="${PYGMENTIZE_STYLE:-monokai}"
+    </code></pre>
+    
 <h2 id="terminals">Terminals</h2>
+  <h3 id="colors">Color palette</h3>
+  <pre>
+    -Normal colors            -Bright colors
+    black:   0x000000         black:   0x585858
+    red:     0xc92c2c         red:     0xd44646
+    green:   0x7dcf3e         green:   0xa1b56c
+    yellow:  0xcfcf3e         yellow:  0xf7ca88
+    blue:    0x3e82cf         blue:    0x7cafc2
+    magenta: 0xad51b5         magenta: 0xba8baf
+    cyan:    0x51b5a1         cyan:    0x86c1b9
+    white:   0xd8d8d8         white:   0xf8f8f8
+  </pre>
   <h3 id="alacritty">Alacritty</h3>
-  <img src="https://user-images.githubusercontent.com/81905574/159072300-f885bbca-6a7d-4694-93de-2208d8d497f1.png">
+  <img width="500px" src="https://user-images.githubusercontent.com/81905574/159072300-f885bbca-6a7d-4694-93de-2208d8d497f1.png">
   <h3 id="coolterm">Cool Retro Term</h3>
-  <img src="https://user-images.githubusercontent.com/81905574/159072884-4742c41e-a0ae-4833-bfe2-ee77928bf14a.png">
+  <img width="500px" src="https://user-images.githubusercontent.com/81905574/159072884-4742c41e-a0ae-4833-bfe2-ee77928bf14a.png">
   (To much bloom, i know, but this terminal it's just for flexing not for work)
 
 <h2 id="kwin">Kwin</h2>
