@@ -33,6 +33,7 @@ These are all my Dotfiles so far, i will update them as i change them.<br/>
   <li><a href="kwin">Kwin</a></li>
   <li><a href="logicd">Logiops</a></li>
   <li><a href="touchegg">Touchegg</a></li>
+  <li><a href="repos">App repos</a></li>
 </ul>
 
 <hr/><br/><br/>
@@ -185,3 +186,16 @@ All the colors are from an <a href="https://misc.flogisoft.com/_media/bash/color
        </ul>
     </li>
    </ul>
+  <h1 id="repos">Repos of all the apps used</h1>
+      Im not the owner of any app listed here, all rights reserverd to their creators.
+      <ul>
+        <li><a href="https://github.com/ohmyzsh/ohmyzsh">OhMyZsh!</a></li>
+        <li><a href="https://github.com/ranger/ranger">Ranger</a></li>
+        <li><a href="https://github.com/Swordfish90/cool-retro-term">Cool Retro Term</a></li>
+        <li><a href="https://github.com/brndnmtthws/conky">Conky</a></li>
+        <li><a href="https://github.com/jarcode-foss/glava">Glava</a></li>
+        <li><a href="https://github.com/dylanaraps/neofetch">Neofetch</a></li>
+        <li><a href="https://github.com/abishekvashok/cmatrix">Cmatrix</a></li>
+        <li><a href="https://github.com/JoseExposito/touchegg">Touchegg</a></li>
+        <li><a href="https://github.com/PixlOne/logiops/">Logiops</a></li>
+      </ul>
