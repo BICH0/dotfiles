@@ -187,7 +187,7 @@ All the colors are from an <a href="https://misc.flogisoft.com/_media/bash/color
     </li>
    </ul>
   <h1 id="repos">Repos of all the apps used</h1>
-      Im not the owner of any app listed here, all rights reserverd to their creators.
+      Im not the owner of any app listed here, all rights reserved to their creators.
       <ul>
         <li><a href="https://github.com/ohmyzsh/ohmyzsh">OhMyZsh!</a></li>
         <li><a href="https://github.com/ranger/ranger">Ranger</a></li>
