@@ -1,5 +1,5 @@
 <h1>Dotfiles</h1>
-
+<image src="https://user-images.githubusercontent.com/81905574/159300636-181fe55e-9723-4341-821b-f9c6c13885c5.png">
 These are all my Dotfiles so far, i will update them as i change them.<br/>
 ! All the changes to the original files are listed in each section so you can modify only those lines without downloading and replacing the whole file.<br/>
 ! All the screenshots are taken with a custom <a href="palette">palette</a>, final results may vary from the images shown here.
