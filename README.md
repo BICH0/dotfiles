@@ -124,7 +124,17 @@ All the colors are from an <a href="https://misc.flogisoft.com/_media/bash/color
   (To much bloom, i know, but this terminal it's just for flexing not for work)
 
 <h2 id="kwin">Kwin</h2>
-  
+  <img src="https://user-images.githubusercontent.com/81905574/159296759-32d9197b-04e2-45b0-bf01-3f0379686fa1.png">
+  The blur effect is achieved with this <a href="https://github.com/esjeon/kwin-forceblur">kwin script</a> from <a href="https://github.com/esjeon">esjeon</a><br/>
+  These are the apps that i dont want to make translucent, if you want to add more all you have to do is append to the opaque section like this:</br>
+  <code>wmclass=firefox|atom|kate|virtualbox|newapp1|newapp2</code><br/>
+ Opaque apps:
+  <ul>
+    <li>Firefox</li>
+    <li>Atom</li>
+    <li>Kate</li>
+    <li>Virtualbox</li>
+  </ul>
 <h2 id="logicd">Logiops</h2>
   These are all my gestures for the MX Master 3:
     <ul>
