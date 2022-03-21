@@ -5,35 +5,35 @@ These are all my Dotfiles so far, i will update them as i change them.<br/>
 ! All the screenshots are taken with a custom <a href="palette">palette</a>, final results may vary from the images shown here.
 <h2>Index</h2>
 <ul>
-  <li><a href="prompt">Prompt</a></li>
-  <li><a href="dircolors">Dircolors</a></li>
-  <li><a href="conkyrc">Conky</a></li>
-  <li><a href="glava">Glava</a>
+  <li><a href="#prompt">Prompt</a></li>
+  <li><a href="#dircolors">Dircolors</a></li>
+  <li><a href="#conkyrc">Conky</a></li>
+  <li><a href="#glava">Glava</a>
     <ul>
-      <li><a href="bars">Bars</a></li>
-      <li><a href="rc">Rc</a></li>
+      <li><a href="#bars">Bars</a></li>
+      <li><a href="#rc">Rc</a></li>
     </ul>
   </li>
-  <li><a href="neofetch">Neofetch</a></li>
-  <li><a href="ranger">Ranger</a>
+  <li><a href="#neofetch">Neofetch</a></li>
+  <li><a href="#ranger">Ranger</a>
     <ul>
-      <li><a href="theme">Theme</a></li>
-      <li><a href="rrc">Rc</a></li>
-      <li><a href="rifle">Rifle</a></li>
-      <li><a href="scope">Scope</a></li>
+      <li><a href="#theme">Theme</a></li>
+      <li><a href="#rrc">Rc</a></li>
+      <li><a href="#rifle">Rifle</a></li>
+      <li><a href="#scope">Scope</a></li>
     </ul>
   </li>
-  <li><a href="terminals">Terminals</a>
+  <li><a href="#terminals">Terminals</a>
     <ul>
-      <li><a href="colors">Palette</a></li>
-      <li><a href="coolterm">Coolterm</a></li>
-      <li><a href="alacritty">Alacritty</a></li>
+      <li><a href="#colors">Palette</a></li>
+      <li><a href="#coolterm">Coolterm</a></li>
+      <li><a href="#alacritty">Alacritty</a></li>
     </ul>
   </li>
-  <li><a href="kwin">Kwin</a></li>
-  <li><a href="logicd">Logiops</a></li>
-  <li><a href="touchegg">Touchegg</a></li>
-  <li><a href="repos">App repos</a></li>
+  <li><a href="#kwin">Kwin</a></li>
+  <li><a href="#logicd">Logiops</a></li>
+  <li><a href="#touchegg">Touchegg</a></li>
+  <li><a href="#repos">App repos</a></li>
 </ul>
 
 <hr/><br/><br/>
