@@ -1,0 +1,40 @@
+#-----Menus
+Mod4 space :rootmenu
+OnTitlebar Mouse3 :windowmenu
+OnDesktop Mouse3 :rootmenu
+OnDesktop Mouse1 :HideMenus
+
+#-----Shortcuts
+Mod4 Shift e :Exit
+Mod4 Enter :Exec fbrun
+Control Mod1 t :Exec urxvt -bg black -fg cyan
+Mod1 Tab :NextWindow
+Mod1 Tab Shift :PrevWindow
+
+#-----Window position
+##----Full
+Mod4 Left :MacroCmd {Raise} {Focus} {MoveTo 0 0 TopLeft} {ResizeTo 50% 100%}
+Mod4 Right :MacroCmd {Raise} {Focus} {MoveTo 0 0 TopRight} {ResizeTo 50% 100%}
+Mod4 Up :Maximize
+Mod4 Down :Close
+##----Partial
+Mod4 Shift Up :MacroCmd {Raise} {Focus} {MoveTo 0 0 TopLeft} {ResizeTo 50% 50%}
+Mod4 Shift Right :MacroCmd {Raise} {Focus} {MoveTo 0 0 TopRight} {ResizeTo 50% 50%}
+Mod4 Shift Down :MacroCmd {Raise} {Focus} {MoveTo 0 0 BottomRight} {ResizeTo 50% 50%}
+Mod4 Shift Left :MacroCmd {Raise} {Focus} {MoveTo 0 0 BottomLeft} {ResizeTo 50% 50%}
+
+#-----Workspaces
+Mod4 1 :Workspace 1
+Mod4 2 :Workspace 2
+Mod4 3 :Workspace 3
+Mod4 4 :Workspace 4
+##--Cycle
+Control Mod1 Right :TakeToNextWorkspace
+Control Mod1 Left :TakeToPrevWorkspace
+OnDesktop Mouse5 :NextWorkspace
+OnDesktop Mouse4 :PrevWorkspace
+##--Window
+Mod4 Shift 1 :TakeToWorkspace 1
+Mod4 Shift 2 :TakeToWorkspace 2
+Mod4 Shift 3 :TakeToWorkspace 3
+Mod4 Shift 4 :TakeToWorkspace 4
